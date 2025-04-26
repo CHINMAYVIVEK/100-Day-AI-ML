@@ -73,7 +73,7 @@ print("\nClassification Report:\n", classification_report(y_test, y_pred))
 # A confusion matrix helps us see how well the model is performing, showing the true positives, true negatives, 
 # false positives, and false negatives.
 plt.figure(figsize=(7, 5))
-sns.heatmap(confusion_matrix(y_test, y_pred), annot=True, fmt='d', cmap='Blues', cbar=False)
+sns.heatmap(confusion_matrix(y_test, y_pred), annot=True, fmt='d', cmap='Reds', cbar=False)
 plt.xlabel('Predicted')
 plt.ylabel('Actual')
 plt.title('Confusion Matrix of Titanic Survival Prediction')
